@@ -1,0 +1,99 @@
+
+.react-flow__node-custom {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.react-flow__node-metric {
+    background: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.data-node {
+    background: #e0f2fe;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+.react-flow__edge-path.custom {
+    stroke: #f6ad55;
+    stroke-width: 3px;
+    stroke-dasharray: 10 5;
+    animation: dashdraw .5s linear infinite;
+}
+
+
+@keyframes dashdraw {
+    to {
+        stroke-dashoffset: 15;
+    }
+}
+
+
+.react-flow__handle {
+    background: #555;
+    width: 10px;
+    height: 10px;
+
+}
+
+
+.react-flow_handle.target {
+    top: 50%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+.react-flow_handle.source {
+    top: 0;
+    left: 0;
+    transform: none;
+    background: #f6ad55;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+}
+
+
+.inputWrapper {
+    display: flex;
+    height: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.dragHandle {
+    background: transparent;
+    width: 14px;
+    height: 100%;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    pointer-events: all;
+}
+
+.input {
+    border: none;
+    padding: 0 2px;
+    border-radius: 1px;
+    font-weight: 700;
+    background: transparent;
+    height: 100%;
+    color: #222;
+    pointer-events: none;
+}
+
+
+.input:focus {
+
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    pointer-events: all;
+}
